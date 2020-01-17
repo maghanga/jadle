@@ -1,5 +1,4 @@
 package dao;
-
 import models.Restaurant;
 import models.Review;
 import org.junit.After;

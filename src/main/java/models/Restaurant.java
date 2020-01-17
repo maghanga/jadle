@@ -9,6 +9,7 @@ public class Restaurant {
     private String phone;
     private String website;
     private String email;
+    private int id;
 
 
     public Restaurant(String name, String address, String zipcode, String phone) {
@@ -27,6 +28,14 @@ public class Restaurant {
         this.phone = phone;
         this.website = website;
         this.email = email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
