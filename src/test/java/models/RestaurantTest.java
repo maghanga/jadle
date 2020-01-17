@@ -1,5 +1,6 @@
 package models;
 
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RestaurantTest {
@@ -77,6 +78,14 @@ public class RestaurantTest {
         Restaurant testRestaurant = setupRestaurant();
         testRestaurant.setEmail("steak@steakhouse.com");
         assertNotEquals("hellofishy@fishwitch.com", testRestaurant.getEmail());
+    }
+
+    public Restaurant setupRestaurant (){
+        return new Restaurant("Fish Witch", "214 NE Broadway", "97232", "503-402-9874", "http://fishwitch.com", "hellofishy@fishwitch.com");
+    }
+
+    public Restaurant setupAltRestaurant (){
+        return new Restaurant("Fish Witch", "214 NE Broadway", "97232", "503-402-9874");
     }
 
 
