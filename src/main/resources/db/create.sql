@@ -10,6 +10,10 @@ CREATE TABLE IF NOT EXISTS restaurants (
  email VARCHAR
 );
 
+CREATE TABLE IF NOT EXISTS foodtypes (
+ id int PRIMARY KEY auto_increment,
+ name VARCHAR
+);
 
 
 
